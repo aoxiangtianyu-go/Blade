@@ -32,3 +32,11 @@
 - **BaseMod**
 
 开发时所需的第三方依赖放置在 `lib/` 目录下。
+
+---
+
+## 🎮 Steam 创意工坊
+
+本 Mod 已发布至 Steam 创意工坊：
+
+👉 https://steamcommunity.com/sharedfiles/filedetails/?id=3631877895
