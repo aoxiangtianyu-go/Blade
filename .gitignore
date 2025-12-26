@@ -34,3 +34,8 @@ ModTheSpire.config
 # (Uncomment if you don't want to commit modding jars)
 # =========================
 lib/*.jar
+
+# =========================
+# Steam Worshop
+# =========================
+BladeWorkshop/
