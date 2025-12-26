@@ -1,0 +1,14 @@
+{
+  "AWE": {
+    "NAME": "Awe",
+    "DESCRIPTIONS": [
+      "You no longer take double damage while in Wrath."
+    ]
+  },
+  "PERSISTENCE": {
+    "NAME": "Persistence",
+    "DESCRIPTIONS": [
+      "You cannot change stances."
+    ]
+  }
+}

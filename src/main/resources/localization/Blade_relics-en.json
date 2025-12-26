@@ -1,0 +1,9 @@
+{
+  "Blade": {
+    "NAME": "Blade",
+    "FLAVOR": "A hairpin fashioned into a concealed weapon, sometimes enough to unnerve an enemy.",
+    "DESCRIPTIONS": [
+      "While in Wrath, you do not lose double HP, but you cannot change stances."
+    ]
+  }
+}

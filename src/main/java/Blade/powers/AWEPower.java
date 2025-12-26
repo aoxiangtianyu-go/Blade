@@ -1,0 +1,44 @@
+package Blade.powers;
+
+import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
+import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
+
+public class AWEPower extends AbstractPower{
+    public static final String POWER_ID = "AWE";
+    private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+    public static final String NAME = powerStrings.NAME;
+    public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+
+    public AWEPower(AbstractCreature owner) {
+        this.name = NAME;
+        this.ID = POWER_ID;
+        this.owner = owner;
+        this.type = PowerType.BUFF;
+    
+        this.amount = -1;
+
+        String Path84 = "img/Blade_powers/AWE84.png";
+        String Path32 = "img/Blade_powers/AWE32.png";
+        this.region128 = new AtlasRegion(ImageMaster.loadImage(Path84), 0, 0, 84, 84);
+        this.region48 = new AtlasRegion(ImageMaster.loadImage(Path32), 0, 0, 32, 32);
+
+        this.updateDescription();
+    }
+
+    public void updateDescription() { 
+        this.description = DESCRIPTIONS[0];
+    }
+
+    public float atDamageReceive(float damage, DamageInfo.DamageType type) {
+        if (type == DamageInfo.DamageType.NORMAL && AbstractDungeon.player.stance.ID.equals("Wrath")) {
+            return damage / 2.0F;
+        }
+        return damage;
+    }
+}

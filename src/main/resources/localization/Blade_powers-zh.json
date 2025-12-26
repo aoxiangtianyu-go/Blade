@@ -1,0 +1,14 @@
+{
+    "AWE": {
+        "NAME": "敬畏",
+        "DESCRIPTIONS": [
+            "愤怒状态不会收到双倍伤害。"
+        ]
+    },
+    "PERSISTENCE": {
+        "NAME": "恒久",
+        "DESCRIPTIONS": [
+            "你将不能改变状态。"
+        ]
+    }
+}
